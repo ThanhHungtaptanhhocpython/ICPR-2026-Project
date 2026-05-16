@@ -2,15 +2,22 @@
 
 Multi-frame OCR pipeline for the ICPR 2026 Low-Resolution License Plate Recognition challenge.
 
+## Competition
+
+[ICPR 2026 Low-Resolution License Plate Recognition](https://www.codabench.org/competitions/12259/#/results-tab) | Team: `AIO_AIZO` (Soloist) | Public Score: `0.745` (Rank 22) | Blind Score: `0.75` (Rank 32) | Track: Computer Vision
+
+- **Multi-frame OCR**: Built a Kaggle-ready **ResTranOCR** pipeline for low-resolution license plate recognition.
+- **Competition result**: Achieved competitive leaderboard results on both public and blind test sets.
+
 The repo integrates the Kaggle notebook workflow with reusable code modules for dataset discovery, training, validation, and submission generation. The default local dataset path is:
 
 ```text
 data/LRLPR-26-5opEvJTW (1)/
-├── train/
-│   ├── Scenario-A/
-│   └── Scenario-B/
-└── test/
-    └── track_*/
+|-- train/
+|   |-- Scenario-A/
+|   `-- Scenario-B/
+`-- test/
+    `-- track_*/
 ```
 
 Kaggle dataset mounts such as `/kaggle/input/datasets/trunghiu/icpr-car-plate-dataset` are auto-detected when the local path is not available.
